@@ -1,0 +1,136 @@
+@use "../abstracts";
+
+%df-align-center {
+    display: flex;
+    align-items: center;
+}
+
+%text-font {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 146.667%;
+}
+
+.header {
+    background: var(--header-bg-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__list-icon {
+        display: none;
+    }
+
+    @include abstracts.breakpoint(lg) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &__list-icon {
+            display: block;
+            margin-right: 15px;
+        }
+    }
+
+    @include abstracts.breakpoint(md) {
+        &__list-icon {
+            margin-right: 0;
+        }
+    }
+}
+
+.heder__inner {
+    @extend %df-align-center;
+
+    @include abstracts.breakpoint(lg) {
+        justify-content: space-between;
+    }
+}
+
+.navbar {
+    margin-left: 144px;
+    margin-right: auto;
+
+    @include abstracts.breakpoint(xl) {
+        margin-left: auto;
+    }
+
+    @include abstracts.breakpoint(lg) {
+        display: none;
+    }
+
+    &__list {
+        @extend %df-align-center;
+        column-gap: 30px;
+    }
+
+    &__link {
+        @extend %df-align-center;
+        column-gap: 6px;
+        padding: 10px 0;
+
+        @extend %text-font;
+    }
+
+    &__arrow {
+        margin-top: 4px;
+    }
+}
+
+.header-act {
+    display: flex;
+    column-gap: 20px;
+    height: 50px;
+
+    %act-common {
+        border-radius: 8px;
+        background: var(--header-act-btn-color);
+        box-shadow: 0px 20px 60px 10px var(--header-act-btn-shadow-color);
+    }
+
+    .btn-seacrh {
+        @extend %act-common;
+        width: 50px;
+
+        @include abstracts.breakpoint(lg) {
+            display: none;
+        }
+    }
+
+    &__group {
+        @extend %act-common;
+        display: flex;
+        column-gap: 20px;
+        padding: 10px 20px;
+
+        @include abstracts.breakpoint(md) {
+            display: none;
+        }
+    }
+
+    &__sperate {
+        width: 1px;
+        height: 30px;
+        background: var(--header-act-sperate-color);
+    }
+
+    .header-btn {
+        @extend %df-align-center;
+        column-gap: 10px;
+        padding: 0;
+
+        &__title {
+            @extend %text-font;
+        }
+    }
+
+    &__user {
+        @extend %act-common;
+        cursor: pointer;
+    }
+
+    &__avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: inherit;
+        object-fit: cover;
+    }
+}
