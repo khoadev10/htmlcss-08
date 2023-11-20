@@ -31,6 +31,8 @@
     }
 
     @include abstracts.breakpoint(md) {
+        background: var(--header-mobile-bg-color);
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
         &__list-icon {
             margin-right: 0;
         }
@@ -39,6 +41,7 @@
 
 .heder__inner {
     @extend %df-align-center;
+    position: relative;
 
     @include abstracts.breakpoint(lg) {
         justify-content: space-between;
@@ -59,13 +62,21 @@
 
     &__list {
         @extend %df-align-center;
-        column-gap: 30px;
+    }
+
+    &__item + &__item {
+        padding-left: 30px;
+    }
+
+    &__item:hover .dropdown {
+        display: block;
     }
 
     &__link {
         @extend %df-align-center;
         column-gap: 6px;
         padding: 10px 0;
+        height: 50px;
 
         @extend %text-font;
     }
