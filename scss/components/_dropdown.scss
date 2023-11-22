@@ -1,10 +1,18 @@
+@use "../abstracts";
+
 .dropdown {
-    display: none;
     position: absolute;
     left: 0;
 
+    display: none;
     width: min(1240px, 100%);
     padding-top: 54px;
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        width: 100%;
+        padding-top: 0;
+    }
 
     &__inner {
         --inner-padding: 30px;
@@ -23,6 +31,19 @@
             translate: -40%;
             filter: var(--dropdown-bg-fillter);
         }
+
+        @include abstracts.breakpoint(lg) {
+            position: initial;
+
+            padding: 0;
+            border-radius: 0;
+            background: initial;
+            box-shadow: initial;
+
+            &::before {
+                content: none;
+            }
+        }
     }
 }
 
@@ -39,12 +60,18 @@
         width: var(--drop-main-width);
         border-right: 1px solid var(--dropdown-menu-border);
         overflow-y: auto;
+
+        @include abstracts.breakpoint(lg) {
+            height: 100%;
+            width: 100%;
+            border-right: none;
+            overflow-y: initial;
+        }
     }
 }
 
 .dropdown-menu-not-main {
     position: relative;
-
     height: calc(min(582px, 100vh - 154px) - var(--inner-padding) * 2);
 }
 
@@ -81,6 +108,10 @@
 .menu-list {
     margin-top: 20px;
     margin-left: 50px;
+
+    @include abstracts.breakpoint(lg) {
+        margin-left: 0;
+    }
 }
 
 .menu-item + .menu-item {
@@ -88,26 +119,51 @@
 }
 
 .sub-menu {
+    display: none;
     position: absolute;
     inset: 0 0 0 var(--drop-main-width);
 
-    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 
     margin-left: 30px;
     height: var(--drop-main-height);
     overflow-y: auto;
+
+    @include abstracts.breakpoint(lg) {
+        position: initial;
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        height: auto;
+
+        .menu-link {
+            padding-left: 50px;
+        }
+    }
 }
 
 .sub-menu-not-main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     inset: 0;
+
+    @include abstracts.breakpoint(lg) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .sub-menu__item + .sub-menu__item {
     margin-top: 30px;
+
+    @include abstracts.breakpoint(lg) {
+        margin-top: 20px;
+    }
+}
+
+.sub-menu__item {
+    @include abstracts.breakpoint(lg) {
+        margin-top: 20px;
+    }
 }
 
 .menu-item--active .sub-menu {

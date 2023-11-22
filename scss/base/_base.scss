@@ -15,18 +15,21 @@ body {
     font-family: Gordita, sans-serif;
     color: var(--text-color);
     background: var(--body-bg-color);
+    scroll-behavior: smooth;
 }
 
+a,
+img,
 button,
 input,
 select,
 textarea {
     font-family: inherit;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
-    color: inherit;
     text-decoration: none;
 }
 

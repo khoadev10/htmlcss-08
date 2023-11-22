@@ -20,6 +20,10 @@ html {
     --dropdown-shawdown: rgba(200, 200, 200, 0.4);
     --dropdown-menu-border: #d2d1d6;
 
+    // Sidebar
+    --sidebar-bgr: #fff;
+    --sidebar-shadow: rgba(200, 200, 200, 0.4);
+
     @include abstracts.breakpoint(md) {
         --header-bg-color: #fff;
     }

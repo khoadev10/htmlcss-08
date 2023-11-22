@@ -1,11 +1,13 @@
 <div class="container g-xl-0">
     <div class="heder__inner">
         <!-- List bar -->
-        <img
-            src="./assets/icons/list.svg"
-            alt=""
-            class="icon header__list-icon"
-        />
+        <button class="header__more js-toggle" toggle-target="#navbar">
+            <img
+                src="./assets/icons/list.svg"
+                alt=""
+                class="icon header__list-icon d-none d-lg-block"
+            />
+        </button>
         <!-- Logo -->
         <a href="./" class="logo">
             <img
@@ -17,7 +19,40 @@
         </a>
 
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav id="navbar" class="navbar show">
+            <!-- Button Back -->
+            <button
+                class="d-none d-lg-block navbar__btn-back js-toggle"
+                toggle-target="#navbar"
+            >
+                <img
+                    src="./assets/icons/btn-back-nav.svg"
+                    alt="Back"
+                    class="icon"
+                />
+            </button>
+
+            <!-- Navbar button Tablet & Mobile -->
+            <a href="#!" class="navbar-btn d-none d-md-flex">
+                <img
+                    src="../assets/icons/buy.svg"
+                    alt=""
+                    class="navbar-btn__img icon"
+                />
+                <span class="navbar-btn__title">Card</span>
+                <span class="navbar-btn__qty">3</span>
+            </a>
+            <a href="#!" class="navbar-btn d-none d-md-flex">
+                <img
+                    src="../assets/icons/heart.svg"
+                    alt=""
+                    class="navbar-btn__img icon"
+                />
+                <span class="navbar-btn__title">Favorite</span>
+                <span class="navbar-btn__qty">8</span>
+            </a>
+
+            <!-- Navbar list -->
             <ul class="navbar__list js-dropdown-list">
                 <li class="navbar__item">
                     <a href="#!" class="navbar__link">
@@ -33,7 +68,7 @@
                         <div class="dropdown__inner">
                             <div class="dropdown-menu">
                                 <div class="dropdown-menu__main">
-                                    <div class="menu-heading">
+                                    <div class="menu-heading d-lg-none">
                                         <div class="menu-icon">
                                             <img
                                                 src="./assets/images/drop-menu/departments/cate-1.1.svg"
@@ -371,12 +406,12 @@
                                                                 class="menu-icon"
                                                             >
                                                                 <img
-                                                                    src="./assets/images/drop-menu/grocery3.1.svg"
+                                                                    src="./assets/images/drop-menu/grocery/gro-3.1.svg"
                                                                     alt=""
                                                                     class="menu-icon-1"
                                                                 />
                                                                 <img
-                                                                    src="./assets/images/drop-menu/grocery3.2.svg"
+                                                                    src="./assets/images/drop-menu/grocery/gro-3.2.svg"
                                                                     alt=""
                                                                     class="menu-icon-2"
                                                                 />
@@ -2039,6 +2074,8 @@
                 </li>
             </ul>
         </nav>
+        <!-- Overlay -->
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
 
         <!-- Action -->
         <div class="header-act">
