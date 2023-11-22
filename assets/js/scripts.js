@@ -114,7 +114,11 @@ function handleActiveMenu() {
             if (!items.length) return;
 
             removeActive(menu);
-            items[0].classList.add(activeClass);
+
+            if (window.innerWidth > 991) {
+                items[0].classList.add(activeClass);
+            }
+            // items[0].classList.add(activeClass);
 
             Array.from(items).forEach((item) => {
                 item.onmouseenter = () => {
@@ -124,9 +128,14 @@ function handleActiveMenu() {
                 };
                 item.onclick = () => {
                     if (window.innerWidth > 991) return;
-                    removeActive(menu);
-                    item.classList.add(activeClass);
-                    item.scrollIntoView();
+
+                    if (item.classList.contains(activeClass)) {
+                        item.classList.remove(activeClass);
+                    } else {
+                        removeActive(menu);
+                        item.classList.add(activeClass);
+                        item.scrollIntoView();
+                    }
                 };
             });
         });

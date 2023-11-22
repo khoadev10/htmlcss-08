@@ -1736,6 +1736,11 @@ html.dark {
     overflow-y: initial;
   }
 }
+@media (max-width: 991.98px) {
+  .dropdown-menu__main > .menu-list {
+    margin-top: 10px;
+  }
+}
 
 .dropdown-menu-not-main {
   position: relative;
@@ -1779,6 +1784,11 @@ html.dark {
 @media (max-width: 991.98px) {
   .menu-list {
     margin-left: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .menu-list {
+    margin-bottom: 10px;
   }
 }
 
@@ -1844,6 +1854,14 @@ html.dark {
   color: #0071dc;
 }
 
+@media (max-width: 991.98px) {
+  .menu-item:hover > .menu-link {
+    color: inherit;
+  }
+  .menu-item--active > .menu-link {
+    color: #0071dc !important;
+  }
+}
 .menu-link {
   display: block;
   font-size: 1.4rem;
