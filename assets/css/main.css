@@ -1379,7 +1379,7 @@ html {
       saturate(2600%) hue-rotate(211deg) brightness(89%) contrast(96%);
   --body-bg-color: #f6f6f6;
   --header-bg-color: #eee;
-  --header-shadow-color: rgba(0, 0, 0, 0.2);
+  --header-shadow-color: rgba(237, 237, 246, 0.2);
   --header-mobile-bg-color: #fff;
   --header-act-btn-color: #fff;
   --header-act-btn-shadow-color: rgba(29, 29, 45, 0.2);
@@ -1403,7 +1403,7 @@ html.dark {
   --body-bg-color: #292e39;
   --header-bg-color: #171c28;
   --header-mobile-bg-color: #171c28;
-  --header-shadow-color: rgba(237, 237, 246, 0.2);
+  --header-shadow-color: rgba(0, 0, 0, 0.2);
   --header-act-btn-color: #292e39;
   --header-act-btn-shadow-color: rgba(0, 0, 0, 0.2);
   --header-act-sperate-color: #ededf6;
@@ -1446,7 +1446,7 @@ html.dark {
 @media (max-width: 767.98px) {
   .header {
     background: var(--header-mobile-bg-color);
-    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    box-shadow: var(--header-shadow-color);
   }
   .header__list-icon {
     margin-right: 0;
