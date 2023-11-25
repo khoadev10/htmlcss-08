@@ -3,12 +3,6 @@
 .slideshow {
     position: relative;
 
-    margin-top: 40px;
-
-    @include abstracts.screen(md) {
-        margin-top: 30px;
-    }
-
     &__inner {
         display: flex;
         overflow: hidden;

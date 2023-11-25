@@ -27,4 +27,14 @@ html {
     @include abstracts.screen(md) {
         --header-bg-color: #fff;
     }
+
+    // Cate-item
+    --cate-bg: #eee;
+    --cate-bg-img: #fff;
+    --cate-tile-color: #000;
+
+    @include abstracts.screen(md) {
+        --cate-bg: #fff;
+        --cate-tile-color: #1a162e;
+    }
 }

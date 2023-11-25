@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,45 +48,103 @@
             load("#header", "./templates/header.html");
         </script>
 
-        <div class="container g-xl-0 g-md-3">
-            <div class="slideshow">
-                <div class="slideshow__inner">
-                    <div class="slideshow__item">
-                        <picture>
-                            <source
-                                media="(max-width:767.98px)"
-                                srcset="
-                                    ./assets/images/slide-show/slide-md-1.jpg
-                                "
-                            />
+        <div class="container home g-0 g-md-3">
+            <!-- Slide Show -->
+            <section class="home__container">
+                <div class="slideshow">
+                    <div class="slideshow__inner">
+                        <div class="slideshow__item">
+                            <picture>
+                                <source
+                                    media="(max-width:767.98px)"
+                                    srcset="
+                                        ./assets/images/slide-show/slide-md-1.jpg
+                                    "
+                                />
+                                <img
+                                    src="./assets/images/slide-show/slide-1.jpg"
+                                    alt=""
+                                    class="slideshow__img"
+                                />
+                            </picture>
+                        </div>
+                        <div class="slideshow__item">
                             <img
                                 src="./assets/images/slide-show/slide-1.jpg"
                                 alt=""
                                 class="slideshow__img"
                             />
-                        </picture>
+                        </div>
+                        <div class="slideshow__item">
+                            <img
+                                src="./assets/images/slide-show/slide-1.jpg"
+                                alt=""
+                                class="slideshow__img"
+                            />
+                        </div>
                     </div>
-                    <div class="slideshow__item">
-                        <img
-                            src="./assets/images/slide-show/slide-1.jpg"
-                            alt=""
-                            class="slideshow__img"
-                        />
-                    </div>
-                    <div class="slideshow__item">
-                        <img
-                            src="./assets/images/slide-show/slide-1.jpg"
-                            alt=""
-                            class="slideshow__img"
-                        />
+                    <div class="slideshow__pagination">
+                        <span class="slideshow__num">1</span>
+                        <span class="slideshow__slider"></span>
+                        <span class="slideshow__num">5</span>
                     </div>
                 </div>
-                <div class="slideshow__pagination">
-                    <span class="slideshow__num">1</span>
-                    <span class="slideshow__slider"></span>
-                    <span class="slideshow__num">5</span>
+            </section>
+
+            <!-- Categrories -->
+            <section class="home__container">
+                <h2 class="home__heading">Browse Categories</h2>
+                <div class="home__categroies row row-cols-3 row-cols-md-1">
+                    <!-- Item 1 -->
+                    <div class="col">
+                        <article class="cate-item">
+                            <img
+                                src="./assets/images/cate/cate-1.png"
+                                alt=""
+                                class="cate-item__img"
+                            />
+                            <div class="cate-item__info">
+                                <h3 class="cate-item__title">$24 - $150</h3>
+                                <p class="cate-item__desc">
+                                    New sumatra mandeling coffe blend
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="col">
+                        <article class="cate-item">
+                            <img
+                                src="./assets/images/cate/cate-2.png"
+                                alt=""
+                                class="cate-item__img"
+                            />
+                            <div class="cate-item__info">
+                                <h3 class="cate-item__title">$37 - $160</h3>
+                                <p class="cate-item__desc">
+                                    Espresso arabica and robusta beans
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="col">
+                        <article class="cate-item">
+                            <img
+                                src="./assets/images/cate/cate-3.png"
+                                alt=""
+                                class="cate-item__img"
+                            />
+                            <div class="cate-item__info">
+                                <h3 class="cate-item__title">$32 - $160</h3>
+                                <p class="cate-item__desc">
+                                    Lavazza top class whole bean coffee blend
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </body>
 </html>

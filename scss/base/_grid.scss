@@ -48,8 +48,9 @@ $gutters: (
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -$grid-gutter-with * 0.5;
-    margin-right: -$grid-gutter-with * 0.5;
+    margin-left: calc(var(--gutter-x) * 0.5 * -1);
+    margin-right: calc(var(--gutter-x) * 0.5 * -1);
+    margin-top: calc(-1 * var(--gutter-y));
 
     > * {
         margin-top: var(--gutter-y);
