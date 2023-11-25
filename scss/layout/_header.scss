@@ -16,7 +16,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         padding-top: 16px;
         padding-bottom: 16px;
 
@@ -25,7 +25,7 @@
         }
     }
 
-    @include abstracts.breakpoint(md) {
+    @include abstracts.screen(md) {
         background: var(--header-mobile-bg-color);
         box-shadow: var(--header-shadow-color);
         &__list-icon {
@@ -37,21 +37,31 @@
 .heder__inner {
     @extend %df-align-center;
     position: relative;
+    z-index: 1;
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         justify-content: space-between;
     }
+
+    @include abstracts.screen(md) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.header__list-icon {
+    display: block;
 }
 
 .navbar {
     margin-left: 144px;
     margin-right: auto;
 
-    @include abstracts.breakpoint(xl) {
+    @include abstracts.screen(xl) {
         margin-left: auto;
     }
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         position: fixed;
         inset: 0 50% 0 0;
         z-index: 9;
@@ -74,11 +84,11 @@
         }
     }
 
-    @include abstracts.breakpoint(md) {
+    @include abstracts.screen(md) {
         right: 35%;
     }
 
-    @include abstracts.breakpoint(sm) {
+    @include abstracts.screen(sm) {
         right: 14%;
         padding: 20px;
     }
@@ -87,7 +97,7 @@
         visibility: hidden;
         opacity: 0;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             position: fixed;
             inset: 0;
             z-index: 8;
@@ -122,7 +132,7 @@
     &__list {
         @extend %df-align-center;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             flex-direction: column;
             align-items: flex-start;
             height: calc(100% - 20px);
@@ -130,7 +140,7 @@
             overflow-y: auto;
         }
 
-        @include abstracts.breakpoint(md) {
+        @include abstracts.screen(md) {
             height: calc(100% - 115px);
         }
     }
@@ -138,7 +148,7 @@
     &__item + &__item {
         padding-left: 30px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             padding-left: 0;
         }
     }
@@ -148,7 +158,7 @@
             display: block;
         }
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             &:hover .dropdown {
                 display: none;
             }
@@ -167,11 +177,11 @@
         padding: 10px 0;
         height: 50px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             justify-content: space-between;
         }
 
-        @include abstracts.breakpoint(sm) {
+        @include abstracts.screen(sm) {
             height: 44px;
             font-size: 1.6rem;
             line-height: 150%;
@@ -181,7 +191,7 @@
     &__arrow {
         margin-top: 4px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             rotate: -90deg;
             transition: rotate 0.2s;
         }
@@ -207,7 +217,7 @@
         @extend %act-common;
         width: 50px;
 
-        @include abstracts.breakpoint(lg) {
+        @include abstracts.screen(lg) {
             display: none;
         }
     }
@@ -218,7 +228,7 @@
         column-gap: 20px;
         padding: 10px 20px;
 
-        @include abstracts.breakpoint(md) {
+        @include abstracts.screen(md) {
             display: none;
         }
     }

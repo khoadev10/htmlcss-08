@@ -47,5 +47,46 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
+
+        <div class="container g-xl-0 g-md-3">
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <div class="slideshow__item">
+                        <picture>
+                            <source
+                                media="(max-width:767.98px)"
+                                srcset="
+                                    ./assets/images/slide-show/slide-md-1.jpg
+                                "
+                            />
+                            <img
+                                src="./assets/images/slide-show/slide-1.jpg"
+                                alt=""
+                                class="slideshow__img"
+                            />
+                        </picture>
+                    </div>
+                    <div class="slideshow__item">
+                        <img
+                            src="./assets/images/slide-show/slide-1.jpg"
+                            alt=""
+                            class="slideshow__img"
+                        />
+                    </div>
+                    <div class="slideshow__item">
+                        <img
+                            src="./assets/images/slide-show/slide-1.jpg"
+                            alt=""
+                            class="slideshow__img"
+                        />
+                    </div>
+                </div>
+                <div class="slideshow__pagination">
+                    <span class="slideshow__num">1</span>
+                    <span class="slideshow__slider"></span>
+                    <span class="slideshow__num">5</span>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

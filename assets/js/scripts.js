@@ -132,7 +132,6 @@ function handleActiveMenu() {
                     if (item.classList.contains(activeClass)) {
                         item.classList.remove(activeClass);
                     } else {
-                        removeActive(menu);
                         item.classList.add(activeClass);
                         item.scrollIntoView();
                     }

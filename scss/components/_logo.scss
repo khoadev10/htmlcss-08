@@ -11,11 +11,11 @@
         line-height: 145.455%;
     }
 
-    @include abstracts.breakpoint(lg) {
+    @include abstracts.screen(lg) {
         margin-right: auto;
     }
 
-    @include abstracts.breakpoint(md) {
+    @include abstracts.screen(md) {
         margin-right: 0;
 
         &__title {
