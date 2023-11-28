@@ -166,7 +166,9 @@ a {
 button {
   border: none;
   outline: none;
+  padding: 0;
   background: transparent;
+  cursor: pointer;
 }
 
 button:hover {
@@ -185,8 +187,8 @@ button:hover {
 }
 
 .container-fluid, .container {
-  --gutter-x: 32px;
-  --gutter-y: 32px;
+  --gutter-x: 40px;
+  --gutter-y: 40px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -363,68 +365,68 @@ button:hover {
 }
 
 .g-1 {
-  --gutter-x: 8px;
-  --gutter-y: 8px;
+  --gutter-x: 10px;
+  --gutter-y: 10px;
 }
 
 .gx-1 {
-  --gutter-x: 8px;
+  --gutter-x: 10px;
 }
 
 .gy-1 {
-  --gutter-y: 8px;
+  --gutter-y: 10px;
 }
 
 .g-2 {
-  --gutter-x: 16px;
-  --gutter-y: 16px;
+  --gutter-x: 20px;
+  --gutter-y: 20px;
 }
 
 .gx-2 {
-  --gutter-x: 16px;
+  --gutter-x: 20px;
 }
 
 .gy-2 {
-  --gutter-y: 16px;
+  --gutter-y: 20px;
 }
 
 .g-3 {
-  --gutter-x: 32px;
-  --gutter-y: 32px;
+  --gutter-x: 40px;
+  --gutter-y: 40px;
 }
 
 .gx-3 {
-  --gutter-x: 32px;
+  --gutter-x: 40px;
 }
 
 .gy-3 {
-  --gutter-y: 32px;
+  --gutter-y: 40px;
 }
 
 .g-4 {
-  --gutter-x: 48px;
-  --gutter-y: 48px;
+  --gutter-x: 60px;
+  --gutter-y: 60px;
 }
 
 .gx-4 {
-  --gutter-x: 48px;
+  --gutter-x: 60px;
 }
 
 .gy-4 {
-  --gutter-y: 48px;
+  --gutter-y: 60px;
 }
 
 .g-5 {
-  --gutter-x: 96px;
-  --gutter-y: 96px;
+  --gutter-x: 120px;
+  --gutter-y: 120px;
 }
 
 .gx-5 {
-  --gutter-x: 96px;
+  --gutter-x: 120px;
 }
 
 .gy-5 {
-  --gutter-y: 96px;
+  --gutter-y: 120px;
 }
 
 @media (max-width: 1399.98px) {
@@ -550,54 +552,54 @@ button:hover {
     --gutter-y: 0px;
   }
   .g-xxl-1 {
-    --gutter-x: 8px;
-    --gutter-y: 8px;
+    --gutter-x: 10px;
+    --gutter-y: 10px;
   }
   .gx-xxl-1 {
-    --gutter-x: 8px;
+    --gutter-x: 10px;
   }
   .gy-xxl-1 {
-    --gutter-y: 8px;
+    --gutter-y: 10px;
   }
   .g-xxl-2 {
-    --gutter-x: 16px;
-    --gutter-y: 16px;
+    --gutter-x: 20px;
+    --gutter-y: 20px;
   }
   .gx-xxl-2 {
-    --gutter-x: 16px;
+    --gutter-x: 20px;
   }
   .gy-xxl-2 {
-    --gutter-y: 16px;
+    --gutter-y: 20px;
   }
   .g-xxl-3 {
-    --gutter-x: 32px;
-    --gutter-y: 32px;
+    --gutter-x: 40px;
+    --gutter-y: 40px;
   }
   .gx-xxl-3 {
-    --gutter-x: 32px;
+    --gutter-x: 40px;
   }
   .gy-xxl-3 {
-    --gutter-y: 32px;
+    --gutter-y: 40px;
   }
   .g-xxl-4 {
-    --gutter-x: 48px;
-    --gutter-y: 48px;
+    --gutter-x: 60px;
+    --gutter-y: 60px;
   }
   .gx-xxl-4 {
-    --gutter-x: 48px;
+    --gutter-x: 60px;
   }
   .gy-xxl-4 {
-    --gutter-y: 48px;
+    --gutter-y: 60px;
   }
   .g-xxl-5 {
-    --gutter-x: 96px;
-    --gutter-y: 96px;
+    --gutter-x: 120px;
+    --gutter-y: 120px;
   }
   .gx-xxl-5 {
-    --gutter-x: 96px;
+    --gutter-x: 120px;
   }
   .gy-xxl-5 {
-    --gutter-y: 96px;
+    --gutter-y: 120px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -723,54 +725,54 @@ button:hover {
     --gutter-y: 0px;
   }
   .g-xl-1 {
-    --gutter-x: 8px;
-    --gutter-y: 8px;
+    --gutter-x: 10px;
+    --gutter-y: 10px;
   }
   .gx-xl-1 {
-    --gutter-x: 8px;
+    --gutter-x: 10px;
   }
   .gy-xl-1 {
-    --gutter-y: 8px;
+    --gutter-y: 10px;
   }
   .g-xl-2 {
-    --gutter-x: 16px;
-    --gutter-y: 16px;
+    --gutter-x: 20px;
+    --gutter-y: 20px;
   }
   .gx-xl-2 {
-    --gutter-x: 16px;
+    --gutter-x: 20px;
   }
   .gy-xl-2 {
-    --gutter-y: 16px;
+    --gutter-y: 20px;
   }
   .g-xl-3 {
-    --gutter-x: 32px;
-    --gutter-y: 32px;
+    --gutter-x: 40px;
+    --gutter-y: 40px;
   }
   .gx-xl-3 {
-    --gutter-x: 32px;
+    --gutter-x: 40px;
   }
   .gy-xl-3 {
-    --gutter-y: 32px;
+    --gutter-y: 40px;
   }
   .g-xl-4 {
-    --gutter-x: 48px;
-    --gutter-y: 48px;
+    --gutter-x: 60px;
+    --gutter-y: 60px;
   }
   .gx-xl-4 {
-    --gutter-x: 48px;
+    --gutter-x: 60px;
   }
   .gy-xl-4 {
-    --gutter-y: 48px;
+    --gutter-y: 60px;
   }
   .g-xl-5 {
-    --gutter-x: 96px;
-    --gutter-y: 96px;
+    --gutter-x: 120px;
+    --gutter-y: 120px;
   }
   .gx-xl-5 {
-    --gutter-x: 96px;
+    --gutter-x: 120px;
   }
   .gy-xl-5 {
-    --gutter-y: 96px;
+    --gutter-y: 120px;
   }
 }
 @media (max-width: 991.98px) {
@@ -896,54 +898,54 @@ button:hover {
     --gutter-y: 0px;
   }
   .g-lg-1 {
-    --gutter-x: 8px;
-    --gutter-y: 8px;
+    --gutter-x: 10px;
+    --gutter-y: 10px;
   }
   .gx-lg-1 {
-    --gutter-x: 8px;
+    --gutter-x: 10px;
   }
   .gy-lg-1 {
-    --gutter-y: 8px;
+    --gutter-y: 10px;
   }
   .g-lg-2 {
-    --gutter-x: 16px;
-    --gutter-y: 16px;
+    --gutter-x: 20px;
+    --gutter-y: 20px;
   }
   .gx-lg-2 {
-    --gutter-x: 16px;
+    --gutter-x: 20px;
   }
   .gy-lg-2 {
-    --gutter-y: 16px;
+    --gutter-y: 20px;
   }
   .g-lg-3 {
-    --gutter-x: 32px;
-    --gutter-y: 32px;
+    --gutter-x: 40px;
+    --gutter-y: 40px;
   }
   .gx-lg-3 {
-    --gutter-x: 32px;
+    --gutter-x: 40px;
   }
   .gy-lg-3 {
-    --gutter-y: 32px;
+    --gutter-y: 40px;
   }
   .g-lg-4 {
-    --gutter-x: 48px;
-    --gutter-y: 48px;
+    --gutter-x: 60px;
+    --gutter-y: 60px;
   }
   .gx-lg-4 {
-    --gutter-x: 48px;
+    --gutter-x: 60px;
   }
   .gy-lg-4 {
-    --gutter-y: 48px;
+    --gutter-y: 60px;
   }
   .g-lg-5 {
-    --gutter-x: 96px;
-    --gutter-y: 96px;
+    --gutter-x: 120px;
+    --gutter-y: 120px;
   }
   .gx-lg-5 {
-    --gutter-x: 96px;
+    --gutter-x: 120px;
   }
   .gy-lg-5 {
-    --gutter-y: 96px;
+    --gutter-y: 120px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1069,54 +1071,54 @@ button:hover {
     --gutter-y: 0px;
   }
   .g-md-1 {
-    --gutter-x: 8px;
-    --gutter-y: 8px;
+    --gutter-x: 10px;
+    --gutter-y: 10px;
   }
   .gx-md-1 {
-    --gutter-x: 8px;
+    --gutter-x: 10px;
   }
   .gy-md-1 {
-    --gutter-y: 8px;
+    --gutter-y: 10px;
   }
   .g-md-2 {
-    --gutter-x: 16px;
-    --gutter-y: 16px;
+    --gutter-x: 20px;
+    --gutter-y: 20px;
   }
   .gx-md-2 {
-    --gutter-x: 16px;
+    --gutter-x: 20px;
   }
   .gy-md-2 {
-    --gutter-y: 16px;
+    --gutter-y: 20px;
   }
   .g-md-3 {
-    --gutter-x: 32px;
-    --gutter-y: 32px;
+    --gutter-x: 40px;
+    --gutter-y: 40px;
   }
   .gx-md-3 {
-    --gutter-x: 32px;
+    --gutter-x: 40px;
   }
   .gy-md-3 {
-    --gutter-y: 32px;
+    --gutter-y: 40px;
   }
   .g-md-4 {
-    --gutter-x: 48px;
-    --gutter-y: 48px;
+    --gutter-x: 60px;
+    --gutter-y: 60px;
   }
   .gx-md-4 {
-    --gutter-x: 48px;
+    --gutter-x: 60px;
   }
   .gy-md-4 {
-    --gutter-y: 48px;
+    --gutter-y: 60px;
   }
   .g-md-5 {
-    --gutter-x: 96px;
-    --gutter-y: 96px;
+    --gutter-x: 120px;
+    --gutter-y: 120px;
   }
   .gx-md-5 {
-    --gutter-x: 96px;
+    --gutter-x: 120px;
   }
   .gy-md-5 {
-    --gutter-y: 96px;
+    --gutter-y: 120px;
   }
 }
 @media (max-width: 575.98px) {
@@ -1242,54 +1244,54 @@ button:hover {
     --gutter-y: 0px;
   }
   .g-sm-1 {
-    --gutter-x: 8px;
-    --gutter-y: 8px;
+    --gutter-x: 10px;
+    --gutter-y: 10px;
   }
   .gx-sm-1 {
-    --gutter-x: 8px;
+    --gutter-x: 10px;
   }
   .gy-sm-1 {
-    --gutter-y: 8px;
+    --gutter-y: 10px;
   }
   .g-sm-2 {
-    --gutter-x: 16px;
-    --gutter-y: 16px;
+    --gutter-x: 20px;
+    --gutter-y: 20px;
   }
   .gx-sm-2 {
-    --gutter-x: 16px;
+    --gutter-x: 20px;
   }
   .gy-sm-2 {
-    --gutter-y: 16px;
+    --gutter-y: 20px;
   }
   .g-sm-3 {
-    --gutter-x: 32px;
-    --gutter-y: 32px;
+    --gutter-x: 40px;
+    --gutter-y: 40px;
   }
   .gx-sm-3 {
-    --gutter-x: 32px;
+    --gutter-x: 40px;
   }
   .gy-sm-3 {
-    --gutter-y: 32px;
+    --gutter-y: 40px;
   }
   .g-sm-4 {
-    --gutter-x: 48px;
-    --gutter-y: 48px;
+    --gutter-x: 60px;
+    --gutter-y: 60px;
   }
   .gx-sm-4 {
-    --gutter-x: 48px;
+    --gutter-x: 60px;
   }
   .gy-sm-4 {
-    --gutter-y: 48px;
+    --gutter-y: 60px;
   }
   .g-sm-5 {
-    --gutter-x: 96px;
-    --gutter-y: 96px;
+    --gutter-x: 120px;
+    --gutter-y: 120px;
   }
   .gx-sm-5 {
-    --gutter-x: 96px;
+    --gutter-x: 120px;
   }
   .gy-sm-5 {
-    --gutter-y: 96px;
+    --gutter-y: 120px;
   }
 }
 .d-block {
@@ -1397,6 +1399,12 @@ html {
   --cate-bg: #eee;
   --cate-bg-img: #fff;
   --cate-tile-color: #000;
+  --btn-filter-bg: #fff;
+  --btn-filter-text-color: #6c6c72;
+  --btn-like-bg: #fff;
+  --btn-like-shadow: rgba(124, 124, 124, 0.2);
+  --product-bg: #fff;
+  --product-shadows: rgba(237, 237, 246, 0.2);
 }
 @media (max-width: 767.98px) {
   html {
@@ -1433,6 +1441,12 @@ html.dark {
   --cate-bg: #171c28;
   --cate-bg-img: #292e39;
   --cate-tile-color: #fff;
+  --btn-filter-bg: #171c28;
+  --btn-filter-text-color: #fff;
+  --btn-like-bg: #292e39;
+  --btn-like-shadow: rgba(124, 124, 124, 0.2);
+  --product-bg: #171c28;
+  --product-shadows: rgba(0, 0, 0, 0.2);
 }
 
 .header-act .header-btn, .navbar__link, .navbar__list, .heder__inner {
@@ -1698,6 +1712,31 @@ html.dark {
   .logo__img {
     width: 24px;
   }
+}
+
+.btn-filter {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--btn-filter-bg);
+  color: var(--btn-filter-text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 142.857%;
+}
+
+.btn-like {
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  border-radius: 50%;
+  background: var(--btn-like-bg);
+  box-shadow: 0px 20px 60px var(--btn-like-shadow);
+}
+.btn-like:not(.btn-like--liked) .btn-like__img--liked, .btn-like--liked .btn-like__img {
+  display: none;
 }
 
 .dropdown {
@@ -2062,6 +2101,57 @@ html.dark {
   }
 }
 
+.product-card {
+  padding: 16px;
+  border-radius: 20px;
+  background: var(--product-bg);
+  box-shadow: 0px 20px 60px 10px var(--product-shawdows);
+}
+.product-card__wrap {
+  position: relative;
+  padding-top: 101%;
+}
+.product-card__thumb {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-card__like {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.product-card__title, .product-card__price, .product-card__num {
+  font-weight: 500;
+  line-height: 150%;
+}
+.product-card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-top: 16px;
+}
+.product-card__brand {
+  display: block;
+  margin: 16px 0;
+  font-size: 1.5rem;
+  line-height: 146.667%;
+}
+.product-card__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-card__vote {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
 .home__container {
   margin-top: 40px;
 }
@@ -2071,7 +2161,6 @@ html.dark {
   }
 }
 .home__heading {
-  margin-bottom: 20px;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
@@ -2094,6 +2183,16 @@ html.dark {
   .home__categroies {
     --gutter-y: 20px;
   }
+}
+.home__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.home__products-gutter {
+  --gutter-x: 30px;
+  --gutter-y: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

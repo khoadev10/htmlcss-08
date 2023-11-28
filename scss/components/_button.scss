@@ -1,0 +1,33 @@
+// Button filter
+.btn-filter {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
+    background: var(--btn-filter-bg);
+
+    color: var(--btn-filter-text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 142.857%;
+}
+
+// Button like
+.btn-like {
+    width: 50px;
+    height: 50px;
+
+    padding: 13px;
+    border-radius: 50%;
+
+    background: var(--btn-like-bg);
+    box-shadow: 0px 20px 60px var(--btn-like-shadow);
+
+    &:not(&--liked) &__img--liked,
+    &--liked &__img {
+        display: none;
+    }
+}

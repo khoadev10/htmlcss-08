@@ -36,7 +36,9 @@ a {
 button {
     border: none;
     outline: none;
+    padding: 0;
     background: transparent;
+    cursor: pointer;
 }
 
 button:hover {

@@ -10,8 +10,6 @@
     }
 
     &__heading {
-        margin-bottom: 20px;
-
         font-size: 2.4rem;
         font-weight: 700;
         line-height: 141.667%;
@@ -32,5 +30,18 @@
         @include abstracts.screen(md) {
             --gutter-y: 20px;
         }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 20px;
+    }
+
+    &__products-gutter {
+        --gutter-x: 30px;
+        --gutter-y: 30px;
     }
 }
