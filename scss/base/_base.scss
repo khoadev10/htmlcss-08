@@ -26,7 +26,15 @@ select,
 textarea {
     font-family: inherit;
     color: inherit;
-    -webkit-tap-highlight-color: transparent;
+    // -webkit-tap-highlight-color: transparent;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+    padding: 0;
+    background: transparent;
 }
 
 a {
@@ -34,16 +42,11 @@ a {
 }
 
 button {
-    border: none;
-    outline: none;
-    padding: 0;
-    background: transparent;
     cursor: pointer;
 }
 
 button:hover {
     opacity: 0.8;
-    cursor: pointer;
 }
 
 .icon {

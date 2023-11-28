@@ -160,14 +160,161 @@
                 <!-- Heading -->
                 <div class="home__row">
                     <h2 class="home__heading">Total LavAzza 1320</h2>
-                    <button class="btn-filter home__margin--bottom">
-                        Filter
-                        <img
-                            src="./assets/icons/filter.svg"
-                            alt=""
-                            class="btn-filter__img icon"
-                        />
-                    </button>
+                    <div class="filter-wrap">
+                        <button
+                            class="btn-filter home__margin--bottom js-toggle"
+                            toggle-target="#filter"
+                        >
+                            Filter
+                            <img
+                                src="./assets/icons/filter.svg"
+                                alt=""
+                                class="btn-filter__img icon"
+                            />
+                        </button>
+                        <!-- Form filter -->
+                        <div class="filter" id="filter">
+                            <!-- Arrow deco background -->
+                            <img
+                                src="./assets/images/filter/filter-bg-deco.png"
+                                alt=""
+                                class="filter__img-deco"
+                            />
+
+                            <h3 class="filter__title filter__title--mb">
+                                Filter
+                            </h3>
+                            <div class="filter__content">
+                                <!-- Col 1 -->
+                                <div class="filter__column">
+                                    <h2 class="filter__title">Price</h2>
+                                    <div class="filter__slider"></div>
+                                    <div class="filter__wrap">
+                                        <div class="filter__group">
+                                            <label
+                                                for="minimum"
+                                                class="filter__group-label"
+                                                >Minimum</label
+                                            >
+                                            <input
+                                                type="text"
+                                                value="$30.00"
+                                                name="price"
+                                                id="minimum"
+                                                class="filter__group-input"
+                                            />
+                                        </div>
+                                        <div class="filter__group">
+                                            <label
+                                                for="maximum"
+                                                class="filter__group-label"
+                                                >Maximum</label
+                                            >
+                                            <input
+                                                type="text"
+                                                value="$100.00"
+                                                name="price"
+                                                id="maximum"
+                                                class="filter__group-input"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Separate -->
+                                <div
+                                    class="filter__separate d-lg-none d-md-block"
+                                ></div>
+
+                                <!-- Col 2 -->
+                                <div class="filter__column">
+                                    <h2 class="filter__title">Size/Weight</h2>
+                                    <div class="filter__selection-wrap">
+                                        <div
+                                            class="filter__select"
+                                            style="
+                                                --width: 157px;
+                                                --width-mobile: 160px;
+                                            "
+                                        >
+                                            <input
+                                                value="500g"
+                                                type="text"
+                                                class="filter__select-input"
+                                            />
+                                            <img
+                                                src="./assets/icons/filter-arow.svg"
+                                                alt=""
+                                                class="filter__select-arrow icon"
+                                            />
+                                        </div>
+                                        <div class="filter__select">
+                                            <input
+                                                value="Gram"
+                                                type="text"
+                                                class="filter__select-input"
+                                            />
+                                            <img
+                                                src="./assets/icons/filter-arow.svg"
+                                                alt=""
+                                                class="filter__select-arrow icon"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="filter__tags">
+                                        <button class="filter__tag">
+                                            Small
+                                        </button>
+                                        <button class="filter__tag">
+                                            Medium
+                                        </button>
+                                        <button class="filter__tag">
+                                            Large
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Separate -->
+                                <div
+                                    class="filter__separate d-lg-none d-md-block"
+                                ></div>
+
+                                <!-- Col 3 -->
+                                <div class="filter__column">
+                                    <h2 class="filter__title">Brand</h2>
+                                    <div class="filter__search">
+                                        <input
+                                            type="text"
+                                            placeholder="Search brand name"
+                                            class="filter__search-input"
+                                        />
+                                        <img
+                                            src="./assets/icons/search.svg"
+                                            alt=""
+                                            class="filter__search-icon icon"
+                                        />
+                                    </div>
+                                    <div class="filter__tags">
+                                        <button class="filter__tag">
+                                            Lavazza
+                                        </button>
+                                        <button class="filter__tag">
+                                            Nescafe
+                                        </button>
+                                        <button class="filter__tag">
+                                            Starbucks
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__footer">
+                                <button class="filter__cancel">Cancel</button>
+                                <button class="filter__result">
+                                    Show Result
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- List -->
                 <div

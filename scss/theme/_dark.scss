@@ -40,4 +40,11 @@ html.dark {
     // Product
     --product-bg: #171c28;
     --product-shadows: rgba(0, 0, 0, 0.2);
+
+    // Form filter
+    --form-filter-bgr: #171c28;
+    --form-filter-shadow: rgba(0, 0, 0, 0.4);
+    --form-filter-tag-bg: #292e39;
+    --form-filter-deco-bg: brightness(0) saturate(100%) invert(6%) sepia(6%)
+        saturate(7072%) hue-rotate(185deg) brightness(88%) contrast(87%);
 }
