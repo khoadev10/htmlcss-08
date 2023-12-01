@@ -10,20 +10,4 @@
         font-weight: 700;
         line-height: 145.455%;
     }
-
-    @include abstracts.screen(lg) {
-        margin-right: auto;
-    }
-
-    @include abstracts.screen(md) {
-        margin-right: 0;
-
-        &__title {
-            font-size: 1.8rem;
-        }
-
-        &__img {
-            width: 24px;
-        }
-    }
 }

@@ -45,6 +45,10 @@
 
         border-radius: 6px;
         border: 1px solid #d2d1d6;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
     }
 
     &__btn {

@@ -9,6 +9,10 @@
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 142.857%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.6rem;
+        }
     }
 
     %input-border {
