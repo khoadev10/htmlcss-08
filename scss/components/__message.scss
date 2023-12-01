@@ -1,0 +1,13 @@
+.meassage {
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    &--susscess {
+        border: 1.5px solid #0071dc;
+        background: rgba($color: #0071dc, $alpha: 0.5);
+    }
+}

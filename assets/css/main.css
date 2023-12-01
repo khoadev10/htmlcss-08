@@ -2623,6 +2623,18 @@ html.dark {
   visibility: hidden;
 }
 
+.meassage {
+  padding: 12px 24px;
+  border-radius: 6px;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.meassage--susscess {
+  border: 1.5px solid #0071dc;
+  background: rgba(0, 113, 220, 0.5);
+}
+
 .home__container {
   margin-top: 40px;
 }
@@ -2681,6 +2693,10 @@ html.dark {
   .auth {
     position: relative;
   }
+}
+.auth__message {
+  width: 100%;
+  margin-top: 20px;
 }
 .auth__intro, .auth__content {
   flex: 1;
