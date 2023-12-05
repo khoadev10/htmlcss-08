@@ -51,7 +51,7 @@ html {
     // Form filter
     --form-filter-bgr: #fff;
     --form-filter-shadow: rgba(200, 200, 200, 0.4);
-    --form-filter-tag-bg: #f8f8fb;
+    --form-tag-bg: #f8f8fb;
 
     // Footer
     --footer-bg: #eee;
@@ -63,4 +63,26 @@ html {
     @include abstracts.screen(md) {
         --auth-intro-bg: #fff;
     }
+
+    // Product detail
+    --product-page-bg: #fff;
+    --product-detail-info-bg: #f6f6f6;
+    --product-detail-form-tag-bg: #ededf6;
+    --product-detail-info-card-text-color: #eee;
+
+    @include abstracts.screen(md) {
+        --product-detail-info-bg: #fff;
+        --product-detail-info-shadow: rgba(237, 237, 246, 0.2);
+    }
+
+    // Breadcrumb
+    --breadcrumb-bg: #f6f6f6;
+    --breadcrumb-shadow: rgba(237, 237, 246, 0.2);
+
+    @include abstracts.screen(md) {
+        --breadcrumb-bg: #fff;
+    }
+
+    // Review card
+    --review-card-bg: #f6f6f6;
 }

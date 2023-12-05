@@ -93,4 +93,88 @@
             line-height: 142.857%;
         }
     }
+
+    &__title {
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 145.455%;
+
+        &--mb {
+            margin-bottom: 30px;
+        }
+
+        @include abstracts.screen(md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__selection-wrap {
+        display: flex;
+        align-items: center;
+
+        width: 272px;
+
+        margin: 20px 0;
+        padding: 5px 0;
+
+        border-radius: 6px;
+        border: 1px solid #d2d1d6;
+    }
+
+    &__select {
+        display: flex;
+        padding: 5px 14px;
+
+        &--long {
+            width: 58%;
+        }
+
+        &--short {
+            width: 42%;
+        }
+
+        &-input {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 142.857%;
+
+            width: 100%;
+        }
+
+        &-arrow {
+            width: 24px;
+        }
+    }
+
+    &__select + &__select {
+        border-left: 1px solid #d2d1d6;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+
+        @include abstracts.screen(md) {
+            gap: 9px;
+        }
+    }
+
+    &__tag {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 142.857%;
+
+        padding: 6px 12px;
+
+        color: #9e9da8;
+        border-radius: 6px;
+        background: var(--form-tag-bg);
+
+        @include abstracts.screen(md) {
+            font-weight: 400;
+        }
+    }
 }

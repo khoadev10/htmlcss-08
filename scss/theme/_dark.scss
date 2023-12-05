@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 html.dark {
     --text-color: #fff;
     --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%)
@@ -44,7 +46,7 @@ html.dark {
     // Form filter
     --form-filter-bgr: #171c28;
     --form-filter-shadow: rgba(0, 0, 0, 0.4);
-    --form-filter-tag-bg: #292e39;
+    --form-tag-bg: #292e39;
     --form-filter-deco-bg: brightness(0) saturate(100%) invert(6%) sepia(6%)
         saturate(7072%) hue-rotate(185deg) brightness(88%) contrast(87%);
 
@@ -54,4 +56,24 @@ html.dark {
     // Auth
     --auth-intro-bg: #171c28;
     --auth-content-bg: #292e39;
+
+    // Product detail
+    --product-page-bg: #292e39;
+    --product-detail-bg: #292e39;
+    --product-detail-info-shadow: rgba(23, 28, 40, 0.2);
+    --product-detail-form-tag-bg: #292e39;
+    --product-detail-info-card-color: #000;
+
+    --product-detail-info-bg: #171c28;
+    --product-detail-info-shadow: rgba(23, 28, 40, 0.2);
+
+    // Breadcrumb
+    --breadcrumb-bg: #171c28;
+    --breadcrumb-shadow: rgba(23, 28, 40, 0.2);
+
+    // Search
+    --search-bg: #171c28;
+
+    // Review card
+    --review-card-bg: #171c28;
 }

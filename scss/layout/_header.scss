@@ -270,6 +270,7 @@
     .btn-seacrh {
         @extend %act-common;
         width: 50px;
+        height: 100%;
 
         @include abstracts.screen(lg) {
             display: none;

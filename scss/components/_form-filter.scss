@@ -166,72 +166,12 @@
     }
 
     &__selection-wrap {
-        @extend %input-border;
-
-        display: flex;
-        align-items: center;
-
-        margin: 20px 0;
-        padding: 5px 0;
-
-        width: 272px;
-
         @include abstracts.screen(xl) {
             width: 240px;
         }
 
         @include abstracts.screen(md) {
             width: 100%;
-        }
-    }
-
-    &__select {
-        display: flex;
-        padding: 5px 14px;
-
-        min-width: var(--width, 108px);
-
-        @include abstracts.screen(xl) {
-            min-width: initial;
-        }
-
-        @include abstracts.screen(md) {
-            min-width: var(--width-mobile, 111px);
-        }
-
-        &-input {
-            @extend %input-font;
-
-            width: 100%;
-        }
-    }
-
-    &__select + &__select {
-        border-left: 1px solid #d2d1d6;
-    }
-
-    &__tags {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-
-        @include abstracts.screen(md) {
-            gap: 9px;
-        }
-    }
-
-    &__tag {
-        @extend %input-font;
-
-        padding: 6px 12px;
-
-        color: #9e9da8;
-        border-radius: 6px;
-        background: var(--form-filter-tag-bg);
-
-        @include abstracts.screen(md) {
-            font-weight: 400;
         }
     }
 
