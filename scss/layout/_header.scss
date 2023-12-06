@@ -13,8 +13,8 @@
 
 .header {
     background: var(--header-bg-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     @include abstracts.screen(lg) {
         padding-top: 16px;
@@ -280,7 +280,9 @@
     &__group {
         @extend %act-common;
         display: flex;
+        align-items: center;
         column-gap: 20px;
+
         padding: 10px 20px;
 
         @include abstracts.screen(md) {
@@ -314,5 +316,108 @@
         height: 50px;
         border-radius: inherit;
         object-fit: cover;
+    }
+}
+
+// Dropdown Cart
+.header-act__wrap {
+    position: relative;
+
+    &:hover .act-dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.act-dropdown {
+    position: absolute;
+    top: 100%;
+    right: -40px;
+
+    padding-top: 35px;
+
+    width: min(450px, 100vw);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition-property: opacity, visibility;
+    transition: 0.2s linear;
+
+    &__inner {
+        position: relative;
+        padding: 20px;
+
+        border-radius: 20px;
+        background: var(--dropdown-cart-bg);
+        box-shadow: 0px 40px 90px 20px var(--dropdown-cart-shadow);
+    }
+
+    &__arrow-deco {
+        position: absolute;
+        height: 20px;
+        right: 20px;
+        top: -17px;
+
+        filter: var(--dropdown-cart-deco-bg);
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row + &__row {
+        margin-top: 20px;
+    }
+
+    &__title {
+        font-weight: 500;
+    }
+
+    &__link {
+        color: #0071dc;
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 20px;
+        overflow: hidden;
+
+        margin: 20px 0;
+    }
+
+    &__item {
+        flex: 1;
+    }
+
+    &__body {
+        margin: 20px 0 10px;
+        padding: 20px 0;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d2d1d6 transparent;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__btn-checkout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        min-width: 240px;
+        height: 44px;
+
+        border-radius: 50px;
+        background: #ffb700;
+
+        font-weight: 500;
     }
 }

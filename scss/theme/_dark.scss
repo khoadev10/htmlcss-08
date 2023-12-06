@@ -15,6 +15,12 @@ html.dark {
     --header-act-btn-shadow-color: rgba(0, 0, 0, 0.2);
     --header-act-sperate-color: #ededf6;
 
+    // Dropdowm cart
+    --dropdown-cart-bg: #1b202c;
+    --dropdown-cart-shadow: rgba(23, 28, 40, 0.4);
+    --dropdown-cart-deco-bg: brightness(0) saturate(100%) invert(10%) sepia(21%)
+        saturate(897%) hue-rotate(183deg) brightness(98%) contrast(93%);
+
     // Dropdown
     --dropdown-bg: #171c28;
     --dropdown-bg-fillter: brightness(0) saturate(100%) invert(6%) sepia(45%)
