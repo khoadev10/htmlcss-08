@@ -65,7 +65,6 @@ html.dark {
 
     // Product detail
     --product-page-bg: #292e39;
-    --product-detail-bg: #292e39;
     --product-detail-info-shadow: rgba(23, 28, 40, 0.2);
     --product-detail-form-tag-bg: #292e39;
     --product-detail-info-card-color: #000;
@@ -82,4 +81,10 @@ html.dark {
 
     // Review card
     --review-card-bg: #171c28;
+
+    // Checkout page
+    --checkout-breadcrum-bg: var(--breadcrumb-bg);
+    --checkout-wrap-bg: #171c28;
+    --checkout-wrap-shadow: rgba(23, 28, 40, 0.2);
+    --checkout-gift-bg: #292e39;
 }

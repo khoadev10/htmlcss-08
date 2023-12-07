@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout | Grocery Mart</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Style  -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <main class="checkout-page">
+            <div class="container g-0 g-lg-3">
+                <!-- Search -->
+                <div class="search d-none d-md-flex">
+                    <input
+                        type="text"
+                        class="search__input"
+                        placeholder="Search for item"
+                    />
+                    <img
+                        class="search__icon icon"
+                        src="./assets/icons/search.svg"
+                        alt=""
+                    />
+                </div>
+                <!-- Breadcrum -->
+                <ul class="breadcrumb checkout-breadcrum">
+                    <li class="breadcrumb__item">
+                        <a href="/" class="breadcrumb__link">Home</a>
+                        <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a
+                            href="#!"
+                            class="breadcrumb__link breadcrumb__link--current"
+                        >
+                            Checkout
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="checkout checkout-container">
+                    <div class="row checkout__row">
+                        <div class="col-8 col-lg-12">
+                            <div class="checkout__wrap">
+                                <div class="checkout__list">
+                                    <!-- Order item 1 -->
+                                    <div class="order-item">
+                                        <img
+                                            src="./assets/images/product-card/card-1.png"
+                                            alt=""
+                                            class="order-item__thumb"
+                                        />
+
+                                        <div class="order-item__body">
+                                            <!-- Info -->
+                                            <div class="order-item__info">
+                                                <h2 class="order-item__name">
+                                                    Coffee Beans - Espresso
+                                                    Arabica and Robusta Beans
+                                                </h2>
+                                                <div
+                                                    class="order-item__wrap order-item__wrap--price"
+                                                >
+                                                    <span
+                                                        class="order-item__price"
+                                                        >$47.00</span
+                                                    >
+                                                    <span
+                                                        class="order-item__status"
+                                                        >In Stock</span
+                                                    >
+                                                </div>
+                                                <div
+                                                    class="order-item__wrap order-item__wrap--input"
+                                                >
+                                                    <div
+                                                        class="order-item__input"
+                                                    >
+                                                        <span
+                                                            class="order-item__input-value"
+                                                            >LavAzza</span
+                                                        >
+                                                        <img
+                                                            src="./assets/icons/arrow-down-2.svg"
+                                                            class="icon"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="order-item__input"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/minus.svg"
+                                                            alt=""
+                                                            class="order-item__input-minus icon"
+                                                        />
+                                                        <span
+                                                            class="order-item__input-value"
+                                                            >1</span
+                                                        >
+                                                        <img
+                                                            src="./assets/icons/plus.svg"
+                                                            alt=""
+                                                            class="order-item__input-plus icon"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sumary -->
+                                            <div class="order-item__sumary">
+                                                <p class="order-item__total">
+                                                    $47.00
+                                                </p>
+                                                <div class="order-item__ctrl">
+                                                    <a
+                                                        href="#!"
+                                                        class="order-item__wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            class="order-item__icon"
+                                                            alt=""
+                                                        />
+                                                        <span>Save</span>
+                                                    </a>
+                                                    <a
+                                                        href="#!"
+                                                        class="order-item__wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/trash.svg"
+                                                            class="order-item__icon"
+                                                            alt=""
+                                                        />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Separate -->
+                                    <div class="checkout__separate"></div>
+
+                                    <!-- Order item 2 -->
+                                    <div class="order-item">
+                                        <img
+                                            src="./assets/images/product-card/card-2.png"
+                                            alt=""
+                                            class="order-item__thumb"
+                                        />
+
+                                        <div class="order-item__body">
+                                            <!-- Info -->
+                                            <div class="order-item__info">
+                                                <h2 class="order-item__name">
+                                                    Lavazza Coffee Blends - Try
+                                                    the Italian Espresso
+                                                </h2>
+                                                <div
+                                                    class="order-item__wrap order-item__wrap--price"
+                                                >
+                                                    <span
+                                                        class="order-item__price"
+                                                        >$53.00</span
+                                                    >
+                                                    <span
+                                                        class="order-item__status"
+                                                        >In Stock</span
+                                                    >
+                                                </div>
+                                                <div class="order-item__wrap">
+                                                    <div
+                                                        class="order-item__input"
+                                                    >
+                                                        <span
+                                                            class="order-item__input-value"
+                                                            >LavAzza</span
+                                                        >
+                                                        <img
+                                                            src="./assets/icons/arrow-down-2.svg"
+                                                            class="icon"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="order-item__input"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/minus.svg"
+                                                            alt=""
+                                                            class="order-item__input-minus icon"
+                                                        />
+                                                        <span
+                                                            class="order-item__input-value"
+                                                            >2</span
+                                                        >
+                                                        <img
+                                                            src="./assets/icons/plus.svg"
+                                                            alt=""
+                                                            class="order-item__input-plus icon"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sumary -->
+                                            <div class="order-item__sumary">
+                                                <p class="order-item__total">
+                                                    $106.00
+                                                </p>
+                                                <div class="order-item__ctrl">
+                                                    <a
+                                                        href="#!"
+                                                        class="order-item__wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            class="order-item__icon"
+                                                            alt=""
+                                                        />
+                                                        <span>Save</span>
+                                                    </a>
+                                                    <a
+                                                        href="#!"
+                                                        class="order-item__wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/trash.svg"
+                                                            class="order-item__icon"
+                                                            alt=""
+                                                        />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Separate -->
+                                    <div class="checkout__separate"></div>
+
+                                    <!-- Order item 3 -->
+                                    <div class="order-item">
+                                        <img
+                                            src="./assets/images/product-card/card-3.png"
+                                            alt=""
+                                            class="order-item__thumb"
+                                        />
+
+                                        <div class="order-item__body">
+                                            <!-- Info -->
+                                            <div class="order-item__info">
+                                                <h2 class="order-item__name">
+                                                    Qualità Oro Mountain Grown -
+                                                    Espresso Coffee Beans
+                                                </h2>
+                                                <div
+                                                    class="order-item__wrap order-item__wrap--price"
+                                                >
+                                                    <span
+                                                        class="order-item__price"
+                                                        >$38.65</span
+                                                    >
+                                                    <span
+                                                        class="order-item__status"
+                                                        >In Stock</span
+                                                    >
+                                                </div>
+                                                <div class="order-item__wrap">
+                                                    <div
+                                                        class="order-item__input"
+                                                    >
+                                                        <span
+                                                            class="order-item__input-value"
+                                                            >LavAzza</span
+                                                        >
+                                                        <img
+                                                            src="./assets/icons/arrow-down-2.svg"
+                                                            class="icon"
+                                                            alt=""
+                                                        />
+                                                    </div>
+                                                    <div
+                                                        class="order-item__input"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/minus.svg"
+                                                            alt=""
+                                                            class="order-item__input-minus icon"
+                                                        />
+                                                        <span
+                                                            class="order-item__input-value"
+                                                            >1</span
+                                                        >
+                                                        <img
+                                                            src="./assets/icons/plus.svg"
+                                                            alt=""
+                                                            class="order-item__input-plus icon"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sumary -->
+                                            <div class="order-item__sumary">
+                                                <p class="order-item__total">
+                                                    $38.65
+                                                </p>
+                                                <div class="order-item__ctrl">
+                                                    <a
+                                                        href="#!"
+                                                        class="order-item__wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            class="order-item__icon"
+                                                            alt=""
+                                                        />
+                                                        <span>Save</span>
+                                                    </a>
+                                                    <a
+                                                        href="#!"
+                                                        class="order-item__wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/trash.svg"
+                                                            class="order-item__icon"
+                                                            alt=""
+                                                        />
+                                                        <span>Delete</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Separate -->
+                                    <div
+                                        class="checkout__separate d-lg-none"
+                                    ></div>
+                                </div>
+
+                                <div class="checkout__bottom d-lg-none">
+                                    <a href="./" class="checkout__back"
+                                        ><img
+                                            src="./assets/icons/arrow-left.svg"
+                                            alt=""
+                                        />
+                                        Continue Shopping
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-lg-12">
+                            <!-- Order totals -->
+                            <div class="checkout__wrap">
+                                <div class="order-totals">
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Subtotal <span>(items)</span>
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >3</span
+                                        >
+                                    </div>
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Price <span>(Total)</span>
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >$191.65</span
+                                        >
+                                    </div>
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Shipping
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >$10.00</span
+                                        >
+                                    </div>
+
+                                    <!-- Separate -->
+                                    <div class="checkout__separate"></div>
+
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Estimated Total
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >$201.65</span
+                                        >
+                                    </div>
+
+                                    <a
+                                        href="#!"
+                                        class="order-totals__btn-checkout"
+                                        >Continue</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Gift -->
+
+                            <div class="checkout__wrap checkout-container">
+                                <div class="gift">
+                                    <img
+                                        src="./assets/images/checkout/gift.svg"
+                                        alt=""
+                                        class="gift__thumb"
+                                    />
+                                    <div class="gift__content">
+                                        <h3 class="gift__title">
+                                            Send this order as a gift.
+                                        </h3>
+                                        <p class="gift__desc">
+                                            Available items will be shipped to
+                                            your gift recipient.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Header -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>

@@ -1,14 +1,14 @@
 @use "../abstracts";
 
-body {
-    --body-bg-color: var(--product-page-bg);
-}
-
 .product-page {
-    background: var(--product-detail-bg);
+    background: var(--product-page-bg);
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @include abstracts.screen(md) {
         padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
