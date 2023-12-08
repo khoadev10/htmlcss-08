@@ -3723,6 +3723,12 @@ html.dark {
     column-gap: 30px;
   }
 }
+@media (max-width: 767.98px) {
+  .order-item__sumary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .order-item__total {
   text-align: right;
   font-size: 2.2rem;

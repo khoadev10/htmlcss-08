@@ -178,6 +178,11 @@
             align-items: center;
             column-gap: 30px;
         }
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__total {
