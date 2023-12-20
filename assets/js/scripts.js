@@ -209,3 +209,43 @@ window.addEventListener("template-loaded", () => {
         });
     });
 });
+
+window.addEventListener("template-loaded", handleLabelHasValue);
+
+window.addEventListener("input", handleLabelHasValue);
+
+// Handle label when input has value
+function handleLabelHasValue() {
+    const labels = $$(".form__label-placeholder");
+
+    Array.from(labels).forEach((label, index) => {
+        const parentInput = label.closest(".form__text-input");
+        const inputs = parentInput.querySelectorAll(".form__input");
+        const textAreas = parentInput.querySelectorAll(".form__textarea");
+
+        Array.from(inputs).forEach((input) => {
+
+            input.oninput = (e) => {
+                const element = e.target
+                if (element.value !== "") {
+                    label.classList.add("form__label-placeholder--has-value");
+                } else {
+                    label.classList.remove("form__label-placeholder--has-value");
+                }
+            }
+        })
+
+        Array.from(textAreas).forEach((textArea) => {
+
+            textArea.oninput = (e) => {
+                const element = e.target
+                if (element.value !== "") {
+                    label.classList.add("form__label-placeholder--has-value");
+                } else {
+                    label.classList.remove("form__label-placeholder--has-value");
+                }
+            }
+        })
+    })
+
+}

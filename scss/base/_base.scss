@@ -32,12 +32,16 @@ textarea {
     color: inherit;
 }
 
+textarea,
 input,
 button {
     border: none;
     outline: none;
     padding: 0;
     background: transparent;
+
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 a {

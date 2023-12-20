@@ -24,9 +24,20 @@
 
 .checkout-breadcrum {
     background: var(--checkout-breadcrum-bg);
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
 }
 
 .checkout {
+    &__title {
+        margin-bottom: 30px;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
     &__row {
         --gutter-x: 30px;
     }
@@ -71,6 +82,10 @@
 .order-item {
     display: flex;
     column-gap: 30px;
+
+    @include abstracts.screen(md) {
+        column-gap: 16px;
+    }
 
     &__thumb {
         width: 172px;
@@ -283,5 +298,139 @@
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 142.857%;
+    }
+}
+
+// Shipping
+.shipping {
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+
+        @include abstracts.screen(md) {
+            font-size: 2rem;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__title,
+    &__btn {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__desc {
+        margin-top: 4px;
+
+        font-size: 1.5rem;
+        line-height: 146.667%;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+
+        padding: 10px 20px;
+
+        border-radius: 30px;
+        background: #ffb700;
+    }
+
+    &__list {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.address-item + .address-item {
+    margin-top: 30px;
+}
+
+.address-item {
+    display: flex;
+    gap: 16px;
+
+    @include abstracts.screen(md) {
+        flex-direction: column;
+    }
+
+    &__info {
+        flex: 1;
+        display: flex;
+        gap: 16px;
+    }
+
+    &__input {
+        appearance: none;
+
+        &::before {
+            content: url(../icons/uncheck.svg);
+            filter: var(--checkout-shipping-checkbox);
+        }
+
+        &:checked::before {
+            content: "";
+        }
+
+        &:checked::after {
+            content: url(../icons/checked-shipping.svg);
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 144.444%;
+    }
+
+    &__detail {
+        margin-top: 4px;
+
+        font-size: 1.5rem;
+        line-height: 146.667%;
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+
+        margin-top: 20px;
+        list-style: disc inside;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 16px;
+            font-size: 1.4rem;
+        }
+    }
+
+    &__ctrl {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__ctrl-inner {
+    }
+
+    &__ctrl-btn {
     }
 }

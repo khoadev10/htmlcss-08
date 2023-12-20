@@ -1,0 +1,155 @@
+@use "../abstracts";
+
+%fill-screen {
+    position: fixed;
+    inset: 0;
+}
+
+.modal {
+    --width-content: 600px;
+
+    &--small {
+        --width-content: 450px;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+    }
+
+    @extend %fill-screen;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition-property: opacity, visibility;
+    transition: 0.2 linear;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__overlay {
+        @extend %fill-screen;
+
+        background: rgba($color: #000, $alpha: 0.4);
+    }
+
+    &__content {
+        position: relative;
+        width: min(var(--width-content), calc(100% - 40px));
+
+        padding: 30px;
+
+        border-radius: 20px;
+        background: var(--dialog-bg);
+        box-shadow: 0px 20px 60px 10px var(--dialog-shadow);
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+
+        flex-wrap: wrap;
+
+        margin-top: 30px;
+    }
+
+    &__btn-cancel,
+    &__btn-confirm {
+        padding: 10px 20px;
+
+        font-weight: 500;
+        white-space: nowrap;
+
+        border-radius: 6px;
+
+        @include abstracts.screen(md) {
+            flex: 1;
+        }
+    }
+
+    &__btn-confirm {
+        background: #ffb700;
+    }
+}
+
+.dialog-address {
+    z-index: 1;
+    width: 100%;
+
+    background: var(--dialog-bg);
+    box-shadow: 0px 20px 60px 10px var(--dialog-shadow);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrap {
+        flex: 1;
+    }
+
+    &__label {
+        display: block;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(form-label-color);
+
+        padding: 16px;
+
+        &--current {
+            border-bottom: 2px solid #ffb700;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+
+        max-height: 200px;
+        width: 100%;
+        overflow-y: auto;
+
+        overscroll-behavior: contain;
+
+        box-shadow: 0px 20px 60px 10px var(--dialog-shadow);
+        background: var(--dialog-bg);
+
+        border-radius: 0 0 10px 10px;
+        border: 1px solid #d2d1d6;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        font-weight: 500;
+
+        padding: 8px 20px;
+    }
+}

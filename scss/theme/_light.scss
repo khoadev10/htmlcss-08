@@ -52,10 +52,11 @@ html {
     --product-bg: #fff;
     --product-shadows: rgba(237, 237, 246, 0.2);
 
-    // Form filter
+    // Form
     --form-filter-bgr: #fff;
     --form-filter-shadow: rgba(200, 200, 200, 0.4);
     --form-tag-bg: #f8f8fb;
+    --form-label-color: #d2d1d6;
 
     // Footer
     --footer-bg: #eee;
@@ -95,4 +96,9 @@ html {
     --checkout-wrap-bg: #fff;
     --checkout-wrap-shadow: rgba(237, 237, 246, 0.2);
     --checkout-gift-bg: rgba($color: #7644e1, $alpha: 0.1);
+    --checkout-shipping-checkbox: var(--icon-color);
+
+    // Dialog
+    --dialog-bg: #fff;
+    --dialog-shadow: rgba(237, 237, 246, 0.2);
 }
