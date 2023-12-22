@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shipping | Grocery Mart</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Style  -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <main class="checkout-page">
+            <div class="container g-0 g-lg-3">
+                <!-- Search -->
+                <div class="search d-none d-md-flex">
+                    <input
+                        type="text"
+                        class="search__input"
+                        placeholder="Search for item"
+                    />
+                    <img
+                        class="search__icon icon"
+                        src="./assets/icons/search.svg"
+                        alt=""
+                    />
+                </div>
+                <!-- Breadcrum -->
+                <ul class="breadcrumb checkout-breadcrum">
+                    <li class="breadcrumb__item">
+                        <a href="/" class="breadcrumb__link">Home</a>
+                        <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a href="/" class="breadcrumb__link">Checkout</a>
+                        <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a
+                            href="./checkout-shipping.html"
+                            class="breadcrumb__link"
+                            >Shipping</a
+                        >
+                        <img src="./assets/icons/arrow-right.svg" alt="" />
+                    </li>
+                    <li class="breadcrumb__item">
+                        <a
+                            href="./checkout-payment.html"
+                            class="breadcrumb__link breadcrumb__link--current"
+                        >
+                            Payment method
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="checkout checkout-container">
+                    <div class="row checkout__row">
+                        <div class="col-8 col-lg-12">
+                            <div class="checkout__wrap">
+                                <!--Shipping  -->
+                                <div class="payment">
+                                    <div class="payment__row">
+                                        <h2 class="checkout__title">
+                                            1. Shipping, arrives between Mon,
+                                            May 16—Tue, May 24
+                                        </h2>
+                                        <button class="checkout__ctrl-btn">
+                                            <img
+                                                src="./assets/icons/edit.svg"
+                                                alt=""
+                                            />Edit
+                                        </button>
+                                    </div>
+
+                                    <div class="payment__card">
+                                        <div class="payment__address">
+                                            <div class="payment__wrap">
+                                                <h3 class="payment__title">
+                                                    Imran Khan
+                                                </h3>
+                                                <p class="payment__sub-text">
+                                                    Museum of Rajas, Sylhet
+                                                    Sadar, Sylhet 3100.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="payment__card">
+                                        <div class="payment__address">
+                                            <div class="payment__wrap">
+                                                <h3 class="payment__title">
+                                                    Imran Khan
+                                                </h3>
+                                                <p class="payment__sub-text">
+                                                    2 items
+                                                </p>
+                                            </div>
+
+                                            <a
+                                                href="./checkout-shipping.html"
+                                                class="payment__sub-text"
+                                            >
+                                                View details
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout__wrap checkout-container">
+                                <!--Shipping  -->
+                                <div class="payment">
+                                    <h2 class="checkout__title">
+                                        1. Shipping, arrives between Mon, May
+                                        16—Tue, May 24
+                                    </h2>
+
+                                    <!-- Separate -->
+                                    <div class="checkout__separate"></div>
+
+                                    <p class="payment__title">
+                                        Availeble Shipping method
+                                    </p>
+
+                                    <div class="payment__card">
+                                        <article class="shipping-method">
+                                            <img
+                                                src="./assets/images/shipping/delivery-1.png"
+                                                alt=""
+                                                class="shipping-method__thumb"
+                                            />
+                                            <div class="shipping-method__wrap">
+                                                <div
+                                                    class="shipping-method__info"
+                                                >
+                                                    <h3
+                                                        class="shipping-method__title"
+                                                    >
+                                                        Fedex Delivery
+                                                    </h3>
+                                                    <p
+                                                        class="shipping-method__sub"
+                                                    >
+                                                        Delivery: 2-3 days work
+                                                    </p>
+                                                </div>
+
+                                                <label
+                                                    class="checkout__checkbox shipping-method__checkbox"
+                                                >
+                                                    <input
+                                                        type="radio"
+                                                        name="cost"
+                                                        class="checkout__input shipping-method__input"
+                                                    />
+                                                    <span
+                                                        class="shipping-method__cost"
+                                                        >Free</span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <div class="payment__card">
+                                        <article class="shipping-method">
+                                            <img
+                                                src="./assets/images/shipping/delivery-2.png"
+                                                alt=""
+                                                class="shipping-method__thumb"
+                                            />
+                                            <div class="shipping-method__wrap">
+                                                <div
+                                                    class="shipping-method__info"
+                                                >
+                                                    <h3
+                                                        class="shipping-method__title"
+                                                    >
+                                                        DHL Delivery
+                                                    </h3>
+                                                    <p
+                                                        class="shipping-method__sub"
+                                                    >
+                                                        Delivery: 2-3 days work
+                                                    </p>
+                                                </div>
+
+                                                <label
+                                                    class="checkout__checkbox shipping-method__checkbox"
+                                                >
+                                                    <input
+                                                        type="radio"
+                                                        name="cost"
+                                                        class="checkout__input shipping-method__input"
+                                                    />
+
+                                                    <span
+                                                        class="shipping-method__cost"
+                                                        >$12.00</span
+                                                    >
+                                                </label>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-lg-12">
+                            <!-- Order totals -->
+                            <div class="checkout__wrap">
+                                <h2 class="checkout__title">Payment Details</h2>
+                                <p class="payment__sub-text">
+                                    Complete your purchase item by providing
+                                    your payment details order.
+                                </p>
+
+                                <form class="payment__form form">
+                                    <div class="form__group">
+                                        <label
+                                            class="form__title payment__form-title"
+                                            >Email Address</label
+                                        >
+
+                                        <div class="form__text-input">
+                                            <input
+                                                class="form__input"
+                                                placeholder="example@gmail.com"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label
+                                            class="form__title payment__form-title"
+                                            >Card Holder</label
+                                        >
+
+                                        <div class="form__text-input">
+                                            <input
+                                                class="form__input"
+                                                placeholder="Imran Khan"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <label
+                                            class="form__title payment__form-title"
+                                            >Card Details</label
+                                        >
+
+                                        <div class="form__text-input">
+                                            <input
+                                                class="form__input"
+                                                placeholder="Card Number"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="form__text-input payment__form-group"
+                                    >
+                                        <input
+                                            class="payment__form-input"
+                                            placeholder="MM/YY"
+                                        />
+                                        <input
+                                            class="payment__form-input"
+                                            placeholder="CVC"
+                                        />
+                                    </div>
+                                </form>
+
+                                <div class="order-totals">
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Subtotal <span>(items)</span>
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >3</span
+                                        >
+                                    </div>
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Price <span>(Total)</span>
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >$191.65</span
+                                        >
+                                    </div>
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Shipping
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >$10.00</span
+                                        >
+                                    </div>
+
+                                    <!-- Separate -->
+                                    <div class="checkout__separate"></div>
+
+                                    <div class="order-totals__row">
+                                        <p class="order-totals__label">
+                                            Estimated Total
+                                        </p>
+
+                                        <span class="order-totals__value"
+                                            >$201.65</span
+                                        >
+                                    </div>
+
+                                    <a href="#!" class="payment__btn"
+                                        >Pay $465.98</a
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Gift -->
+
+                            <div class="checkout__wrap checkout-container">
+                                <div class="gift">
+                                    <img
+                                        src="./assets/images/checkout/gift.svg"
+                                        alt=""
+                                        class="gift__thumb"
+                                    />
+                                    <div class="gift__content">
+                                        <h3 class="gift__title">
+                                            Send this order as a gift.
+                                        </h3>
+                                        <p class="gift__desc">
+                                            Available items will be shipped to
+                                            your gift recipient.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Header -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+
+        <!-- Modal add new address -->
+        <div class="modal hide" id="modal-address">
+            <div class="modal__overlay"></div>
+            <div class="modal__content">
+                <h2 class="modal__heading">Add new address</h2>
+                <form action="" class="form" autocomplete="off">
+                    <div class="form__wrap">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    id="name"
+                                    type="text"
+                                    value=""
+                                    class="form__input"
+                                />
+                                <label
+                                    for="name"
+                                    class="form__label-placeholder"
+                                    >Name</label
+                                >
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    id="phone"
+                                    type="text"
+                                    value=""
+                                    class="form__input"
+                                />
+                                <label
+                                    for="phone"
+                                    class="form__label-placeholder"
+                                    >Phone</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div
+                            class="form__text-input js-toggle"
+                            toggle-target="#dialog-address"
+                        >
+                            <input
+                                id="address"
+                                type="text"
+                                class="form__input"
+                            />
+                            <img
+                                src="./assets/icons/arrow-down-2.svg"
+                                alt=""
+                                class="icon"
+                            />
+                            <label for="address" class="form__label-placeholder"
+                                >Provice/city, district, ward</label
+                            >
+                        </div>
+                        <div
+                            class="form__dialog dialog-address hide"
+                            id="dialog-address"
+                        >
+                            <div class="dialog-address__row">
+                                <div class="dialog-address__wrap">
+                                    <span
+                                        class="dialog-address__label dialog-address__label--current"
+                                        >Provice/city</span
+                                    >
+                                    <ul class="dialog-address__list">
+                                        <li class="dialog-address__item">
+                                            Ha Noi
+                                        </li>
+                                        <li class="dialog-address__item">
+                                            Da Nang
+                                        </li>
+                                        <li class="dialog-address__item">
+                                            HCM
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dialog-address__wrap">
+                                    <span class="dialog-address__label"
+                                        >District</span
+                                    >
+                                </div>
+                                <div class="dialog-address__wrap">
+                                    <span class="dialog-address__label"
+                                        >Ward</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__text-input">
+                            <textarea
+                                id="specific"
+                                type="text"
+                                class="form__textarea"
+                            ></textarea>
+                            <label
+                                for="specific"
+                                class="form__label-placeholder"
+                                >Specific address</label
+                            >
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <p class="form__text">Address type:</p>
+
+                        <div class="form__group">
+                            <input type="radio" id="home" name="address" />
+                            <label class="form__text-label" for="home"
+                                >Home</label
+                            >
+                        </div>
+
+                        <div class="form__group">
+                            <input type="radio" id="offfice" name="address" />
+                            <label class="form__text-label" for="offfice"
+                                >Office</label
+                            >
+                        </div>
+                    </div>
+                </form>
+                <div class="modal__bottom">
+                    <button
+                        class="modal__btn-cancel js-toggle"
+                        toggle-target="#modal-address"
+                    >
+                        Cancel
+                    </button>
+                    <button class="modal__btn-confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

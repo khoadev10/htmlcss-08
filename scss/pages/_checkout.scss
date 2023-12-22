@@ -31,11 +31,13 @@
 
 .checkout {
     &__title {
-        margin-bottom: 30px;
-
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: 500;
         line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.8rem;
+        }
     }
 
     &__row {
@@ -62,6 +64,10 @@
         background: #d2d1d6;
     }
 
+    &__list {
+        margin-top: 30px;
+    }
+
     &__bottom {
         display: flex;
         justify-content: space-between;
@@ -76,6 +82,32 @@
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+
+    &__ctrl-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__input {
+        appearance: none;
+
+        width: 24px;
+        height: 24px;
+
+        &::before {
+            content: url(../icons/uncheck.svg);
+            filter: var(--checkout-shipping-checkbox);
+        }
+
+        &:checked::before {
+            content: "";
+        }
+
+        &:checked::after {
+            content: url(../icons/checked-shipping.svg);
+        }
     }
 }
 
@@ -375,23 +407,6 @@
         gap: 16px;
     }
 
-    &__input {
-        appearance: none;
-
-        &::before {
-            content: url(../icons/uncheck.svg);
-            filter: var(--checkout-shipping-checkbox);
-        }
-
-        &:checked::before {
-            content: "";
-        }
-
-        &:checked::after {
-            content: url(../icons/checked-shipping.svg);
-        }
-    }
-
     &__title {
         font-size: 1.8rem;
         font-weight: 500;
@@ -427,10 +442,163 @@
         display: flex;
         align-items: flex-end;
     }
+}
 
-    &__ctrl-inner {
+// Payment
+%title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+
+    @include abstracts.screen(md) {
+        font-size: 1.5rem;
+    }
+}
+
+.payment {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @include abstracts.screen(lg) {
+            gap: 40px;
+        }
     }
 
-    &__ctrl-btn {
+    &__card {
+        margin-top: 30px;
+        padding: 20px;
+
+        border-radius: 20px;
+        background: var(--payment-card-bg);
+
+        @include abstracts.screen(md) {
+            padding: 16px;
+        }
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @extend %title;
+    }
+
+    &__sub-text {
+        margin-top: 6px;
+
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 146.667%;
+    }
+
+    &__form-title {
+        display: block;
+        margin: 20px 0;
+    }
+
+    &__form-group {
+        margin: 20px 0 30px;
+        padding: 12px 0;
+    }
+
+    &__form-input {
+        width: 100%;
+
+        padding: 0 12px;
+
+        &:first-child {
+            border-right: 1px solid #d2d1d6;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 30px;
+        padding: 12px 30px;
+        border-radius: 10px;
+        background: #ffb700;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 145.455%;
+    }
+}
+
+.shipping-method {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include abstracts.screen(md) {
+        &__thumb {
+            align-self: flex-start;
+            width: 60px;
+            height: 48px;
+        }
+    }
+
+    &__wrap,
+    &__checkbox {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrap {
+        flex: 1;
+        justify-content: space-between;
+
+        @include abstracts.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+
+    &__checkbox {
+        flex-direction: row-reverse;
+        gap: 14px;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    &__sub {
+        color: #9e9da8;
+
+        line-height: 150%;
+
+        @include abstracts.screen(md) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__cost {
+        @extend %title;
+
+        color: #9e9da8;
+    }
+
+    &__input::before {
+        filter: brightness(0) saturate(100%) invert(66%) sepia(17%)
+            saturate(129%) hue-rotate(206deg) brightness(93%) contrast(93%);
+    }
+
+    &__input:checked ~ &__cost {
+        color: var(--text-color);
     }
 }
