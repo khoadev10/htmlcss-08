@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile | Grocery Mart</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Style  -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <main>
+            <div class="container g-0 g-lg-3">
+                <div class="profile">
+                    <!-- Sidebar -->
+                    <div class="profile__sidebar">
+                        <aside class="sidebar">
+                            <div class="sidebar__user">
+                                <img
+                                    src="./assets/images/avatar.jpg"
+                                    alt=""
+                                    class="sidebar__avatar"
+                                />
+                                <h2 class="sidebar__user-name">Imran Khan</h2>
+                                <p class="sidebar__user-regis">
+                                    Registered: 17th May 2022
+                                </p>
+                            </div>
+                            <div class="sidebar__content">
+                                <!-- Manage Account -->
+                                <div class="profile__group">
+                                    <h3 class="sidebar__title">
+                                        Manage Account
+                                    </h3>
+                                    <ul class="sidebar__list">
+                                        <li>
+                                            <a
+                                                href="./personal-info.html"
+                                                class="sidebar__link"
+                                            >
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/person.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Personal info
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/location.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Addresses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/message-prof.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Communications & privacy
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- My items -->
+                                <div class="profile__group">
+                                    <h3 class="sidebar__title">My items</h3>
+                                    <ul class="sidebar__list">
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/dowload.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Reorder
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/location.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Lists
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/gift.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Registries
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Subscriptions & plans -->
+                                <div class="profile__group">
+                                    <h3 class="sidebar__title">
+                                        Subscriptions & plans
+                                    </h3>
+                                    <ul class="sidebar__list">
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/done.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Protection plans
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Customer Service -->
+                                <div class="profile__group">
+                                    <h3 class="sidebar__title">
+                                        Customer Service
+                                    </h3>
+                                    <ul class="sidebar__list">
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/square.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Help
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!" class="sidebar__link">
+                                                <div class="sidebar__icon">
+                                                    <img
+                                                        src="./assets/icons/danger.svg"
+                                                        alt=""
+                                                        class="icon"
+                                                    />
+                                                </div>
+                                                Terms of Use
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="profile__content">
+                        <!-- My wallet -->
+                        <div class="profile__group">
+                            <h2 class="profile__title">My Wallet</h2>
+                            <p class="profile__desc">Payment methods</p>
+                            <div
+                                class="row row-cols-3 row-cols-xl-2 row-cols-lg-1 profile__row-grid"
+                            >
+                                <!-- Card 1 -->
+                                <div class="col">
+                                    <article
+                                        class="card-item"
+                                        style="--bg: #1e2e69"
+                                    >
+                                        <img
+                                            src="./assets/images/card-item/plane-large.svg"
+                                            alt=""
+                                            class="card-item__deco"
+                                        />
+                                        <div class="card-item__inner">
+                                            <div class="card-item__top">
+                                                <img
+                                                    src="./assets/images/card-item/plane-small.svg"
+                                                    alt=""
+                                                />
+                                                <span class="card-item__type"
+                                                    >FeatherCard</span
+                                                >
+                                            </div>
+                                            <h3 class="card-item__number">
+                                                1234 4567 8901 2221
+                                            </h3>
+                                            <div class="card-item__bottom">
+                                                <div class="card-item__group">
+                                                    <p class="card-item__label">
+                                                        Card Holder
+                                                    </p>
+                                                    <p class="card-item__text">
+                                                        Imran Khan
+                                                    </p>
+                                                </div>
+                                                <div class="card-item__group">
+                                                    <p class="card-item__label">
+                                                        Expired
+                                                    </p>
+                                                    <p class="card-item__text">
+                                                        10/22
+                                                    </p>
+                                                </div>
+                                                <img
+                                                    src="./assets/images/card-item/oval.svg"
+                                                    alt=""
+                                                    class="card-item__oval"
+                                                />
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="col">
+                                    <article
+                                        class="card-item"
+                                        style="--bg: #354151"
+                                    >
+                                        <img
+                                            src="./assets/images/card-item/leaf-large.svg"
+                                            alt=""
+                                            class="card-item__deco"
+                                        />
+                                        <div class="card-item__inner">
+                                            <div class="card-item__top">
+                                                <img
+                                                    src="./assets/images/card-item/leaf-small.svg"
+                                                    alt=""
+                                                />
+                                                <span class="card-item__type"
+                                                    >FeatherCard</span
+                                                >
+                                            </div>
+                                            <h3 class="card-item__number">
+                                                1234 4567 8901 2221
+                                            </h3>
+                                            <div class="card-item__bottom">
+                                                <div class="card-item__group">
+                                                    <p class="card-item__label">
+                                                        Card Holder
+                                                    </p>
+                                                    <p class="card-item__text">
+                                                        Imran Khan
+                                                    </p>
+                                                </div>
+                                                <div class="card-item__group">
+                                                    <p class="card-item__label">
+                                                        Expired
+                                                    </p>
+                                                    <p class="card-item__text">
+                                                        10/22
+                                                    </p>
+                                                </div>
+                                                <img
+                                                    src="./assets/images/card-item/oval.svg"
+                                                    alt=""
+                                                    class="card-item__oval"
+                                                />
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!-- Add new card -->
+                                <div class="col">
+                                    <a href="./add-new-card.html">
+                                        <div class="card-item">
+                                            <div
+                                                class="card-item__inner card-new"
+                                            >
+                                                <img
+                                                    src="./assets/icons/plus.svg"
+                                                    alt=""
+                                                    class="icon"
+                                                />
+                                                <p class="card-new__text">
+                                                    Add New Card
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Account info -->
+                        <div class="profile__group">
+                            <h2 class="profile__title">Account info</h2>
+                            <p class="profile__desc">
+                                Addresses, contact information and password
+                            </p>
+
+                            <div class="row row-cols-2 row-cols-lg-1 g-2">
+                                <!-- Account card 1 -->
+                                <div class="col">
+                                    <div class="account-card">
+                                        <div class="account-card__icon">
+                                            <img
+                                                src="./assets/icons/message-prof.svg"
+                                                alt=""
+                                                class="icon"
+                                            />
+                                        </div>
+                                        <div class="account-card__info">
+                                            <p class="account-card__label">
+                                                Email Address
+                                            </p>
+                                            <p class="account-card__sub">
+                                                tarek97.ta@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Account card 2 -->
+                                <div class="col">
+                                    <div class="account-card">
+                                        <div class="account-card__icon">
+                                            <img
+                                                src="./assets/icons/phone.svg"
+                                                alt=""
+                                                class="icon"
+                                            />
+                                        </div>
+                                        <div class="account-card__info">
+                                            <p class="account-card__label">
+                                                Phone number
+                                            </p>
+                                            <p class="account-card__sub">
+                                                +000 11122 2345 657
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Account card 3 -->
+                                <div class="col">
+                                    <div class="account-card">
+                                        <div class="account-card__icon">
+                                            <img
+                                                src="./assets/icons/location.svg"
+                                                alt=""
+                                                class="icon"
+                                            />
+                                        </div>
+                                        <div class="account-card__info">
+                                            <p class="account-card__label">
+                                                Add an address
+                                            </p>
+                                            <p class="account-card__sub">
+                                                Bangladesh Embassy, Washington,
+                                                DC 20008
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Lists -->
+                        <div class="profile__group">
+                            <h2 class="profile__title">Lists</h2>
+                            <p class="profile__desc">2 items - Primary</p>
+
+                            <div>
+                                <!-- Product 1 -->
+                                <article class="card-product">
+                                    <img
+                                        src="./assets/images/product-card/card-1.png"
+                                        alt=""
+                                        class="card-product__img"
+                                    />
+                                    <div class="card-product__body">
+                                        <h3 class="card-product__title">
+                                            Coffee Beans - Espresso Arabica and
+                                            Robusta Beans
+                                        </h3>
+                                        <div class="card-product__wrap">
+                                            <span class="card-product__price"
+                                                >$47.00</span
+                                            >
+                                            <a
+                                                href="./checkout.html"
+                                                class="card-product__btn"
+                                                >Add to cart</a
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Separate -->
+                                <div class="separate"></div>
+
+                                <!-- Product 2 -->
+                                <article class="card-product">
+                                    <img
+                                        src="./assets/images/product-card/card-2.png"
+                                        alt=""
+                                        class="card-product__img"
+                                    />
+                                    <div class="card-product__body">
+                                        <h3 class="card-product__title">
+                                            Lavazza Coffee Blends - Try the
+                                            Italian Espresso
+                                        </h3>
+                                        <div class="card-product__wrap">
+                                            <span class="card-product__price"
+                                                >$53.00</span
+                                            >
+                                            <a
+                                                href="./checkout.html"
+                                                class="card-product__btn"
+                                                >Add to cart</a
+                                            >
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+        <div class="modal hide" id="modal">
+            <div class="modal__overlay js-toggle" toggle-target="#modal"></div>
+            <div class="modal__content">
+                <p class="modal__text">
+                    Lorem ipsum dolor sit amet consectetur?
+                </p>
+                <div class="modal__bottom">
+                    <button
+                        class="modal__btn-cancel js-toggle"
+                        toggle-target="#modal"
+                    >
+                        Cancel
+                    </button>
+                    <button class="modal__btn-confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

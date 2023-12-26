@@ -16,6 +16,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
+    z-index: 999;
+
     @include abstracts.screen(lg) {
         padding-top: 16px;
         padding-bottom: 16px;

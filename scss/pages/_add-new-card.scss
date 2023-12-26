@@ -1,0 +1,45 @@
+@use "../abstracts";
+
+.form-card {
+    &__group {
+        margin-top: 16px;
+    }
+
+    &__label {
+        margin-bottom: 20px;
+
+        @include abstracts.screen(md) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+
+        margin-top: 30px;
+
+        font-weight: 500;
+        line-height: 150%;
+
+        @include abstracts.screen(md) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__btn-save {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 20px;
+        height: 44px;
+
+        border-radius: 30px;
+        background: #ffb700;
+
+        color: #1a162e;
+    }
+}

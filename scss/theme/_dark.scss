@@ -1,9 +1,9 @@
 @use "../abstracts";
 
 html.dark {
-    --text-color: #fff;
-    --icon-color: brightness(0) saturate(100%) invert(100%) sepia(100%)
-        saturate(23%) hue-rotate(255deg) brightness(107%) contrast(107%);
+    --text-color: #b9babe;
+    --icon-color: brightness(0) saturate(100%) invert(94%) sepia(10%)
+        saturate(81%) hue-rotate(190deg) brightness(81%) contrast(84%);
 
     --body-bg-color: #292e39;
 
@@ -95,4 +95,7 @@ html.dark {
     // Dialog
     --dialog-bg: #171c28;
     --dialog-shadow: rgba(23, 28, 40, 0.2);
+
+    // Profile
+    --profile-bg: #171c28;
 }
